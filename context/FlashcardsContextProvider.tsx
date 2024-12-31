@@ -33,7 +33,7 @@ const FlashcardsContext = createContext<FlashcardContextType | null>(null);
 
 export default function FlashcardsContextProvider({ children }: Props) {
   const [flashcardSets, setFlashcardSets] = useState(
-    JSON.parse(window?.localStorage?.getItem("flashcardSets"))
+    JSON.parse(localStorage?.getItem("flashcardSets"))
   );
 
   // if (typeof window !== "undefined") {
