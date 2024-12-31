@@ -38,5 +38,3 @@ export default async function page({ params }) {
     </PageContainer>
   );
 }
-// on hover, change bg color of section to secondary blue
-// let user pick between studying or editing

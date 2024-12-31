@@ -50,7 +50,7 @@ export default function StudyPage() {
   }
 
   function incrementCardCounter() {
-    if (Number(currentCardIdx) < cards.length - 1) {
+    if (Number(currentCardIdx) < cards?.length - 1) {
       router.push(`${pathname}?card=${Number(currentCardIdx) + 1}`);
       setCardFlipped(false);
     }
@@ -77,7 +77,7 @@ export default function StudyPage() {
           {cardSetDropdownOpen && <CardSetsDropdown cardSets={flashcardSets} />}
         </div>
 
-        {cards.length > 0 ? (
+        {cards?.length > 0 ? (
           <>
             <div className={styles.cardAndActionsContainer}>
               <button

@@ -35,7 +35,11 @@ export default function FlashcardsContextProvider({ children }: Props) {
   const [flashcardSets, setFlashcardSets] = useState();
 
   useEffect(() => {
-    setFlashcardSets(JSON.parse(localStorage?.getItem("flashcardSets")));
+    if (typeof window !== undefined) {
+      const sets = JSON.parse(localStorage?.getItem("flashcardSets"));
+
+      setFlashcardSets(sets);
+    }
   }, []);
 
   function createFlashcardSet(newFlashcardSet: QuestionType[]) {

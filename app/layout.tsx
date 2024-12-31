@@ -6,6 +6,8 @@ import styles from "./page.module.css";
 
 import FlashcardsContextProvider from "@/context/FlashcardsContextProvider";
 
+import { Suspense } from "react";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -14,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        {/* <Suspense> */}
         <FlashcardsContextProvider>
           <div className="siteContainer">
             <section className={styles.landingPage}>
@@ -23,6 +26,7 @@ export default function RootLayout({
             </section>
           </div>
         </FlashcardsContextProvider>
+        {/* </Suspense> */}
       </body>
     </html>
   );

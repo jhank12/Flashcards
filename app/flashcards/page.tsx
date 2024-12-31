@@ -40,7 +40,8 @@ export default function FlashcardsPage() {
                   <div className={styles.cardInfoContainer}>
                     <p className={styles.cardSetName}>{setName}</p>
                     <p className={styles.cardSetAmount}>
-                      {cards.length} {pluralizeString(cards.length, "Question")}
+                      {cards?.length}{" "}
+                      {pluralizeString(cards?.length, "Question")}
                     </p>
                   </div>
                 </Flashcard>

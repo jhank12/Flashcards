@@ -135,25 +135,6 @@
   color: var(--font-tertiary);
 }
 
-/* .createSetBtn {
-  align-items: center;
-  align-self: flex-end;
-  border: 3px solid var(--accent);
-  border-radius: 12px;
-  color: var(--secondary-blue);
-  color: var(--font-main);
-  display: flex;
-  height: 60px;
-  min-height: 60px;
-  justify-content: center;
-  width: 115px;
-}
-
-.createSetBtn:hover {
-  background-color: var(--accent-hover);
-  color: var(--secondary-blue);
-} */
-
 @media (max-width: 800px) {
   .createSetPage h1 {
     font-size: 1.5rem;
