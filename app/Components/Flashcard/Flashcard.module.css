@@ -1,0 +1,27 @@
+.flashCard {
+  align-items: center;
+  border: 3px solid var(--secondary-blue);
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 320px;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  position: relative;
+  text-align: center;
+  /* width: 460px; */
+  /* aspect-ratio: 16/9; */
+}
+
+.flashCard:hover {
+  background-color: var(--secondary-blue);
+}
+
+.flashCard p {
+  color: var(--font-tertiary);
+  color: var(--font-tertiary);
+
+  font-size: 1.15rem;
+}

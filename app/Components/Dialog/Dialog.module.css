@@ -1,0 +1,19 @@
+.dialog {
+  background-color: var(--secondary-blue);
+  padding: 2rem;
+  max-width: 550px;
+  min-width: 400px;
+  width: 35%;
+  z-index: 10;
+}
+
+.dialog form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.dialog input {
+  border: 2px solid #283a5f;
+}

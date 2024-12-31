@@ -1,0 +1,10 @@
+.justifySpaceBetween {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.justifySpaceBetween i {
+  cursor: pointer;
+  font-size: 1.75rem;
+}

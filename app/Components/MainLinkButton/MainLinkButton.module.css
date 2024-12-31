@@ -1,0 +1,18 @@
+.linkBtnMain,
+.btnMain {
+  align-items: center;
+  border: 3px solid var(--accent);
+  border-radius: 12px;
+  color: var(--font-main);
+  display: flex;
+  font: inherit;
+  height: 60px;
+  justify-content: center;
+  width: 135px;
+}
+
+.linkBtnMain:hover,
+.btnMain:hover {
+  background-color: var(--accent);
+  color: var(--secondary-blue);
+}

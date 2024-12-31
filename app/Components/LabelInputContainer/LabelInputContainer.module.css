@@ -1,0 +1,9 @@
+.labelInputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.labelInputContainer label {
+  color: var(--font-tertiary);
+}

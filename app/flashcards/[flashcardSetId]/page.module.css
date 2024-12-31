@@ -1,0 +1,54 @@
+.flashcardOptionPage {
+  align-items: center;
+  display: flex;
+  gap: 1.5rem;
+  height: 100%;
+}
+
+.flashcardOptionLink {
+  border: 3px solid var(--secondary-blue);
+  border-radius: 20px;
+  height: 100%;
+  flex: 1;
+}
+
+.flashcardSetOption {
+  align-items: center;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1.5rem;
+  height: 100%;
+  justify-content: center;
+}
+
+.flashcardSetOption:hover {
+  background-color: var(--secondary-blue);
+}
+
+.flashcardSetOption i {
+  color: var(--font-tertiary);
+  font-size: 6rem;
+}
+
+.flashcardSetOption p {
+  color: var(--font-secondary);
+  font-size: 1.5rem;
+}
+
+.optionDivider {
+  border: 1px solid var(--secondary-blue);
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  .flashcardOptionPage {
+    flex-direction: column;
+  }
+
+  .flashcardOptionLink {
+    width: 100%;
+  }
+}
