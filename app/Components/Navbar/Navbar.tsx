@@ -19,9 +19,9 @@ export default function Navbar() {
 
   const pathname = usePathname();
 
-  // useEffect(() => {
-  //   closeModal(navRef);
-  // }, [pathname]);
+  useEffect(() => {
+    closeModal(navRef);
+  }, [pathname]);
 
   return (
     <header>
