@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useContext, createContext } from "react";
+import React, { useState, useEffect, useContext, createContext } from "react";
 import { ReactNode } from "react";
 
 import { QuestionType } from "@/app/Components/AddQuestionDialog/AddQuestionDialog";
@@ -32,15 +32,11 @@ type FlashcardContextType = {
 const FlashcardsContext = createContext<FlashcardContextType | null>(null);
 
 export default function FlashcardsContextProvider({ children }: Props) {
-  const [flashcardSets, setFlashcardSets] = useState(
-    JSON.parse(window?.localStorage?.getItem("flashcardSets"))
-  );
+  const [flashcardSets, setFlashcardSets] = useState();
 
-  // if (typeof window !== "undefined") {
-  //   setFlashcardSets([]);
-  // }
-
-  console.log(flashcardSets);
+  useEffect(() => {
+    setFlashcardSets(JSON.parse(localStorage?.getItem("flashcardSets")));
+  }, []);
 
   function createFlashcardSet(newFlashcardSet: QuestionType[]) {
     if (flashcardSets) {
