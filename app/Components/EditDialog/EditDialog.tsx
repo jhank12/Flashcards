@@ -2,9 +2,12 @@
 
 import React, { Ref, useState } from "react";
 
+import styles from "./EditDialog.module.css";
+
 import Dialog from "../Dialog/Dialog";
 import JustifySpaceBetween from "../JustifySpaceBetween/JustifySpaceBetween";
 import MainButton from "../MainButton/MainButton";
+import FormSubmitButton from "../FormSubmitButton/FormSubmitButton";
 
 import { closeModal } from "@/app/lib/modalFunctions";
 
@@ -56,16 +59,21 @@ export default function EditDialog({
     <Dialog dialogRef={dialogRef}>
       <JustifySpaceBetween>
         <h2>Edit {capitalizeKey(currentKey)}</h2>
+
+        <i
+          className="ri-close-line modalCloseIcon"
+          onClick={(e) => closeModal(dialogRef, e)}
+        />
       </JustifySpaceBetween>
 
       {isForm ? (
-        <form onSubmit={formSubmit}>
+        <form className={styles.editDialogForm} onSubmit={formSubmit}>
           <input
             type="text"
             onChange={(e) => setUpdatedField(e.target.value)}
           />
 
-          <MainButton text={`Update ${capitalizeKey(currentKey)}`} />
+          <FormSubmitButton text={`Update ${capitalizeKey(currentKey)}`} />
         </form>
       ) : (
         <>

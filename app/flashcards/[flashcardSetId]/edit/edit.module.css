@@ -4,3 +4,8 @@
   gap: 4rem;
   position: relative;
 }
+
+.cardSetActions {
+  display: flex;
+  gap: 1rem;
+}

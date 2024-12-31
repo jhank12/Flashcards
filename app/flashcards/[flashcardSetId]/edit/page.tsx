@@ -57,12 +57,14 @@ export default function EditPage() {
           <JustifySpaceBetween>
             <h1>{cardSetName}</h1>
 
-            <MainButton
-              text={"Add Question"}
-              onClick={(e) => showModal(addQuestionRef, e)}
-            />
+            <div className={styles.cardSetActions}>
+              <MainButton
+                text={"Add Question"}
+                onClick={(e) => showModal(addQuestionRef, e)}
+              />
 
-            <MainButton text={"Delete Flashcard Set"} onClick={deleteSet} />
+              <MainButton text={"Delete Flashcard Set"} onClick={deleteSet} />
+            </div>
           </JustifySpaceBetween>
           <QuestionsList
             questionsList={cards}

@@ -16,6 +16,7 @@ import { useFlashcardsContext } from "@/context/FlashcardsContextProvider";
 import Dialog from "../Dialog/Dialog";
 import JustifySpaceBetween from "../JustifySpaceBetween/JustifySpaceBetween";
 import LabelInputContainer from "../LabelInputContainer/LabelInputContainer";
+import FormSubmitButton from "../FormSubmitButton/FormSubmitButton";
 
 interface Props {
   dialogRef: Ref<HTMLDialogElement>;
@@ -105,7 +106,8 @@ export default function AddQuestionDialog({
           </p>
         )}
 
-        <button className={styles.formSubmitBtn}>Add Question</button>
+        <FormSubmitButton text={"Add Question"} />
+        {/* <button className={styles.formSubmitBtn}>Add Question</button> */}
       </form>
     </Dialog>
   );

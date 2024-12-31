@@ -1,4 +1,4 @@
-/* .formSubmitBtn {
+.formSubmitBtn {
   background-color: var(--accent);
   border-radius: 10px;
   color: var(--secondary-blue);
@@ -8,8 +8,4 @@
 
 .formSubmitBtn:hover {
   background-color: var(--accent-hover);
-} */
-
-.errorText {
-  color: rgb(255, 50, 50);
 }
