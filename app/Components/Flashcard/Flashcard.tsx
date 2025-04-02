@@ -6,9 +6,15 @@ interface Props {
   children: ReactNode;
   onClick?: () => void;
   cardKey: string | number;
+  flashCardClass: string;
 }
 
-export default function Flashcard({ children, onClick, cardKey }: Props) {
+export default function Flashcard({
+  children,
+  onClick,
+  cardKey,
+  isOnlyCard,
+}: Props) {
   return (
     <div className={styles.flashCard} onClick={onClick} key={cardKey}>
       {children}

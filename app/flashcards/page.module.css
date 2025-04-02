@@ -42,6 +42,10 @@
   gap: 1rem;
 }
 
+.flashcardLinkHalfWidth {
+  width: 50%;
+}
+
 .flashCardSet {
   display: flex;
   flex-direction: column;

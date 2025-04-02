@@ -35,7 +35,13 @@ export default function FlashcardsPage() {
             const { id, setName, cards } = set;
 
             return (
-              <Link key={id} href={`./flashcards/${id}`}>
+              <Link
+                key={id}
+                href={`./flashcards/${id}`}
+                className={
+                  flashcardSets.length == 1 ? styles.flashcardLinkHalfWidth : ""
+                }
+              >
                 <Flashcard key={id}>
                   <div className={styles.cardInfoContainer}>
                     <p className={styles.cardSetName}>{setName}</p>

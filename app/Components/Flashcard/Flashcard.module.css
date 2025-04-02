@@ -1,4 +1,5 @@
-.flashCard {
+.flashCard,
+.flashCardHalfWidth {
   align-items: center;
   border: 3px solid var(--secondary-blue);
   border-radius: 30px;
@@ -11,15 +12,19 @@
   padding: 1rem;
   position: relative;
   text-align: center;
-  /* width: 460px; */
-  /* aspect-ratio: 16/9; */
 }
 
-.flashCard:hover {
+/* .flashCardHalfWidth {
+  max-width: 50%;
+} */
+
+.flashCard:hover,
+.flashCardHalfWidth:hover {
   background-color: var(--secondary-blue);
 }
 
-.flashCard p {
+.flashCard p,
+.flashCardHalfWidth p {
   color: var(--font-tertiary);
   color: var(--font-tertiary);
 
