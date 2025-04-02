@@ -39,11 +39,6 @@ ul li a:hover {
 .mobileNav {
   background-color: var(--secondary-blue);
   height: 100%;
-  /* position: absolute;
-  top: 0;
-  height: 100vh;
-  width: 100%;
-  z-index: 10; */
 }
 
 @media (max-width: 1000px) {

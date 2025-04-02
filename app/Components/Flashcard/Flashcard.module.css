@@ -14,10 +14,6 @@
   text-align: center;
 }
 
-/* .flashCardHalfWidth {
-  max-width: 50%;
-} */
-
 .flashCard:hover,
 .flashCardHalfWidth:hover {
   background-color: var(--secondary-blue);

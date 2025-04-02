@@ -24,10 +24,6 @@ export default function EditPage() {
   const { flashcardSets, deleteFlashcardSet, editQuestion, deleteQuestion } =
     useFlashcardsContext();
 
-  if (flashcardSets) {
-    console.log(flashcardSets);
-  }
-
   function deleteSet() {
     router.push("/flashcards");
     deleteFlashcardSet(setId);
